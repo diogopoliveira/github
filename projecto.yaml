@@ -1,7 +1,12 @@
----
-- hosts: all
-  gather_facts: yes
+- hosts: localhost
+  connection: local
+  gather_facts: no
+
   tasks:
-    - name: Nome da maquina
-      debug:
-       msg: '{{ansible_hostname}}'
+    - name: Get hostname
+      shell: echo $HOSTNAME
+      register: result
+
+   - name: Print the var
+     debug:
+       var: result
