@@ -2,6 +2,6 @@
 - hosts: all
   gather_facts: yes
   tasks:
-    - name: ansible host name
-      degub: 
-        msg: "{{ ansible_hostname }}"
+    - name: Nome da maquina
+      debug:
+       msg: '{{ansible_hostname}}'
