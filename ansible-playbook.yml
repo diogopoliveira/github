@@ -1,0 +1,10 @@
+---
+- hosts: all
+  vars:
+    testvar01: unicorns are blue
+
+tasks:
+- name: Testing variables
+  debug
+   msg: "{{ testvar01 }}"
+    
