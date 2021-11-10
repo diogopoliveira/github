@@ -6,5 +6,5 @@
 tasks:
 - name: Testing variables
   debug
-   msg: "{{ testvar01 }}"
+    msg: "{{ testvar01 }}"
     
