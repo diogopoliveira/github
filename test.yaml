@@ -14,5 +14,5 @@
         state: latest
 
   roles:
-
     - name: rhel-system-roles.timesync
+    
