@@ -3,8 +3,8 @@
   vars:
     testvar01: unicorns are blue
 
-tasks:
-- name: Testing variables
-  debug
-    msg: "{{ testvar01 }}"
+  tasks:
+  - name: Testing variables
+    debug:
+      msg: "{{ testvar01 }}"
     
